@@ -1,4 +1,4 @@
-# Wikahmart Frontend 
+# Pafet Landing Page Frontend 
 
-The User interface implementation of Wikahmart
+The User interface implementation of Pafet Landing Page
 
