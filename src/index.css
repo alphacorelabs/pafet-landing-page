@@ -1,0 +1,110 @@
+html, body {
+  scroll-behavior: smooth;
+  overflow: auto;
+  color-scheme: white;
+}
+
+img {
+  pointer-events: none;
+}
+.dark {
+  background-color: white !important;
+  color: white !important;
+}
+
+body {
+  background-color: white !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAECF1;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7238F2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7238F2;
+}
+
+
+
+/* Style for Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+}
+
+/* Ensure the SVG icons inside the buttons are scaled down */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px !important; 
+}
+
+/* Optional: Adjust positioning if needed */
+.swiper-button-prev {
+  left: 10px !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
+}
+
+
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.work {
+  background-color: #FFFFFF !important;
+  position: relative !important;
+}
+
+.work::before, .work::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 70%,
+    #7238f2,
+    #f1ebfe,
+    #000326
+  );
+  z-index: -10;
+  padding: 4px;
+  animation: spin 3s linear infinite;
+}
+
+.work::before {
+  filter: blur(1.5rem) !important;
+  opacity: 0.5 !important;
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
