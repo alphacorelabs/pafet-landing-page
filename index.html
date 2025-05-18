@@ -4,15 +4,72 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pafet</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Pafet | Virtual USD Accounts for Global Invoicing & Payments</title>
+    <meta name="description" content="Pafet gives you a virtual USD account, card, and tools to invoice global clients. Take control of your money moves with our all-in-one financial platform." />
+    <meta name="keywords" content="virtual USD account, global invoicing, online payments, financial tools, international payments" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.pafet.com/" />
+    
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pafet | Virtual USD Accounts for Global Invoicing" />
+    <meta property="og:description" content="Take control of your money moves with Pafet. Virtual USD accounts, cards, and invoicing tools for global clients." />
+    <meta property="og:url" content="https://www.pafet.com/" />
+    <meta property="og:image" content="https://www.pafet.com/pafet-logo.jpg" />
+    <meta property="og:site_name" content="Pafet" />
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pafet | Virtual USD Accounts for Global Invoicing" />
+    <meta name="twitter:description" content="Take control of your money moves with Pafet. Virtual USD accounts, cards, and invoicing tools for global clients." />
+    <meta name="twitter:image" content="https://www.pafet.com/pafet-logo.jpg" />
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/switzer" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Pafet",
+      "description": "Pafet gives you a virtual USD account, card, and tools to invoice global clients — all in one place.",
+      "url": "https://www.pafet.com",
+      "logo": "https://www.pafet.com/pafet-logo.jpg",
+      "sameAs": [
+        "https://www.facebook.com/pafet",
+        "https://www.twitter.com/pafet",
+        "https://www.linkedin.com/company/pafet"
+      ],
+      "potentialAction": {
+        "@type": "RegisterAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.pafet.com/get-started"
+        },
+        "name": "Sign Up"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Virtual USD Account",
+        "description": "Create your USD account for global payments and invoicing"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Add noscript tag for users with JavaScript disabled -->
+    <noscript>
+      <p>Please enable JavaScript to use all features of Pafet.</p>
+    </noscript>
   </body>
 </html>
