@@ -33,7 +33,6 @@ import ContainerLayout from "../../ui/layouts/ContainerLayout";
 import CtaButton from "../../ui/CtaButton";
 import { socialIcons } from "../../data/NavbarData";
 
-
 function DownloadCTA() {
   return (
     <Stack
@@ -49,150 +48,73 @@ function DownloadCTA() {
       bgRepeat="no-repeat"
       bgSize="cover"
     >
-        <ContainerLayout>
-            <VStack
-                w="full"
-                justify="start"
-                align="start"
-                gap="40px"
-                py={["initial", "initial", "80px"]}
-                px={["initial", "initial", "80px"]}
-                zIndex={2}
-            >
-                <SimpleGrid
-                  w="full"
-                  columns={[1, 1, 1, 2]}
-                  gap="60px"
-                >
-                    <VStack
-                      w="full"
-                      justify="start"
-                      align="start"
-                      gap="40px"
-                    >
-                        <VStack
-                            w="full"
-                            justify="start"
-                            align="start"
-                            gap="20px"
-                        >
-                            <Heading
-                                fontSize={[30, 30, 56]}
-                                fontWeight={600}
-                                color="white"
-                                lineHeight="120%"
-                                letterSpacing="-1%"
-                            >
-                                The way you get paid shouldn’t hold you back.
-                            </Heading>
+      <ContainerLayout>
+        <VStack
+          w="full"
+          justify="start"
+          align="start"
+          gap="40px"
+          py={["initial", "initial", "80px"]}
+          px={["initial", "initial", "80px"]}
+          zIndex={2}
+        >
+          <SimpleGrid w="full" columns={[1, 1, 1, 2]} gap="60px">
+            <VStack w="full" justify="start" align="start" gap="40px">
+              <VStack w="full" justify="start" align="start" gap="20px">
+                <Heading fontSize={[30, 30, 56]} fontWeight={600} color="white" lineHeight="120%" letterSpacing="-1%">
+                  The way you get paid shouldn’t hold you back.
+                </Heading>
 
-                            <Text
-                                fontSize={[16, 16, 18]}
-                                fontWeight={400}
-                                color="grey.500"
-                                lineHeight="160%"
-                                letterSpacing="0%"
-                            >
-                                Pafet gives you everything you need to earn globally, spend freely, and stay in control. Get everything you need to earn, hold, and spend in USD.
-                            </Text>
-                        </VStack>
+                <Text fontSize={[16, 16, 18]} fontWeight={400} color="grey.500" lineHeight="160%" letterSpacing="0%">
+                  Pafet gives you everything you need to earn globally, spend freely, and stay in control. Get everything you need to earn,
+                  hold, and spend in USD.
+                </Text>
+              </VStack>
 
-                        <VStack
-                            w="full"
-                            justify="start"
-                            align="start"
-                            gap="20px"
-                        >
-                            <Text
-                              fontSize={14}
-                              fontWeight={400}
-                              lineHeight="160%"
-                              color="brand.900"
-                              textTransform="uppercase"
-                            >
-                                Contact Us
-                            </Text>
+              <VStack w="full" justify="start" align="start" gap="20px">
+                <Text fontSize={14} fontWeight={400} lineHeight="160%" color="brand.900" textTransform="uppercase">
+                  Contact Us
+                </Text>
 
-                            <VStack
-                              w="full"
-                              justify="start"
-                              align="start"
-                              gap="16px"
-                            >
-                                <Text
-                                    fontSize={16}
-                                    fontWeight={600}
-                                    lineHeight="160%"
-                                    letterSpacing="0%"
-                                    color="brand.900"
-                                >
-                                    support@pafet.com
-                                </Text>
+                <VStack w="full" justify="start" align="start" gap="16px">
+                  <Text fontSize={16} fontWeight={600} lineHeight="160%" letterSpacing="0%" color="brand.900">
+                    hello@usePafet.com
+                  </Text>
 
-                                <HStack
-                                    w="full"
-                                    justify="start"
-                                    align="center"
-                                    gap="10px"
-                                >
-                                    {socialIcons.map((item, i) => (
-                                        <Link 
-                                          key={i}
-                                          to={item?.url}
-                                        >
-                                            <Icon
-                                                as={item.icon}
-                                                fontSize="24px"
-                                                color="brand.1000"
-                                                _hover={{
-                                                    color: "brand.100"
-                                                }}
-                                            />
-                                        
-                                        </Link>
-                                    ))}
-
-                                </HStack>
-
-                            </VStack>
-
-                        </VStack>
-                    </VStack>
-
-                    <VStack
-                      w="full"
-                      justify="center"
-                      align="center"
-                      gap="40px"
-                      data-aos="zoom-in"
-                      data-aos-duration="1000"
-                    >
-                        <Image
-                          w="full"
-                          h="full"
-                          src="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/hny5ltokeosen4ouanxy"
-                          alt="download-cta-image"
-                          objectFit="contain"
+                  <HStack w="full" justify="start" align="center" gap="10px">
+                    {socialIcons.map((item, i) => (
+                      <Link key={i} to={item?.url}>
+                        <Icon
+                          as={item.icon}
+                          fontSize="24px"
+                          color="brand.1000"
+                          _hover={{
+                            color: "brand.100",
+                          }}
                         />
-
-                        <CtaButton
-                          isLink={true}
-                          isSmall={true}
-                          isGradient={true}
-                          isDownload={true}
-                          btnText="Download the Pafet App"
-                          btnUrl="/"
-                        />
-
-                    </VStack>
-
-                </SimpleGrid>
-
+                      </Link>
+                    ))}
+                  </HStack>
+                </VStack>
+              </VStack>
             </VStack>
-        </ContainerLayout>
 
+            <VStack w="full" justify="center" align="center" gap="40px" data-aos="zoom-in" data-aos-duration="1000">
+              <Image
+                w="full"
+                h="full"
+                src="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/hny5ltokeosen4ouanxy"
+                alt="download-cta-image"
+                objectFit="contain"
+              />
+
+              <CtaButton isLink={true} isSmall={true} isGradient={true} isDownload={true} btnText="Download the Pafet App" btnUrl="/" />
+            </VStack>
+          </SimpleGrid>
+        </VStack>
+      </ContainerLayout>
     </Stack>
-  )
+  );
 }
 
-export default DownloadCTA
+export default DownloadCTA;
