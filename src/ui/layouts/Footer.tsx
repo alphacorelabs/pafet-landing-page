@@ -40,9 +40,9 @@ function Footer() {
       align="start"
       bgColor="brand.300"
       gap="40px"
-      h={["1040px", "680px", "680px"]}
+      h={["1040px", "680px", "540px"]}
       overflow="hidden"
-      pt={["2rem", "2rem", "6rem"]}
+      pt={["2rem", "2rem", "3rem"]}
     >
         <ContainerLayout>
             <VStack

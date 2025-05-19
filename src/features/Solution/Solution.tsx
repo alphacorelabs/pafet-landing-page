@@ -55,8 +55,7 @@ function Solution() {
                 />
 
                 <SimpleGrid
-                  w={["full", "full", "95%"]}
-                  mx={["initial", "initial", "auto"]}
+                  w="full"
                   columns={[1, 1, 1, 12]}
                   gap="24px"
                 >
@@ -77,15 +76,15 @@ function Solution() {
                     >
                         <Box
                           w="full"
-                          h={["100px", "100px", "140px"]}
+                          h={["100px", "100px", "120px"]}
                           position="absolute"
                           left={0}
                           right={0}
                           bottom={0}
-                          backdropFilter="blur(20px)"
+                          backdropFilter="blur(10px)"
                         />
                         <Heading
-                          fontSize={[24, 24, 32]}
+                          fontSize={[24, 24, 28]}
                           fontWeight={600}
                           color="white"
                           lineHeight="140%"

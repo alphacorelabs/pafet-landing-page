@@ -169,18 +169,18 @@ function Join() {
                     >
                             <Swiper
                                 style={{ width: "100%", height: "100%" }}
-                                speed={2000}
-                                loop={true}
-                                parallax={true}
+                                speed={1000}
+                                loop={false}
+                                parallax={false}
                                 slidesPerView={1}
-                                spaceBetween={20}
+                                spaceBetween={4}
                                 pagination={false}
                                 centeredSlides={true}
                                 autoplay={{
-                                    delay: 2500,
+                                    delay: 3000,
                                     disableOnInteraction: true,
                                 }}
-                                modules={[Autoplay, Parallax, Pagination, Navigation]}
+                                modules={[Autoplay, Pagination, Navigation]}
                                 navigation={false}
                                     breakpoints={{
                                         640: {

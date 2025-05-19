@@ -73,6 +73,7 @@ function Offer() {
                 >
                     {offersData.map((item: OfferProps, i: number) => (
                         <VStack
+                            key={i}
                             w="full"
                             justify="start"
                             align="center"
@@ -84,6 +85,8 @@ function Offer() {
                             overflow="hidden"
                             data-aos={i % 2 === 0 ? "zoom-in-up": "zoom-in"}
                             data-aos-duration="1000"
+                            role="group"
+                            cursor="pointer"
                         >
                             <VStack
                                 w={["full", "full", "300px"]}
@@ -99,6 +102,10 @@ function Offer() {
                                     src={item.imageUrl}
                                     alt={`${item?.title?.toLowerCase()}-image`}
                                     objectFit="contain"
+                                    _groupHover={{
+                                        transform: "scale(1.05)",
+                                        transition: "all 0.3s ease-in-out",
+                                    }}
                                 />
                             </VStack>
 

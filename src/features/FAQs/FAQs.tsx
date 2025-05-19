@@ -45,7 +45,7 @@ function FAQs() {
       w="full"
       justify="start"
       align="start"
-      pt="6rem"
+      pt="8rem"
       pb={["4rem", "4rem", "6rem"]}
       bgColor="alt.300"
     >
@@ -124,6 +124,7 @@ function FAQs() {
                             px="16px"
                             h="initial"
                             bgColor="white"
+                            color="grey.700"
                             border="1px solid"
                             borderColor="grey.200"
                             rounded="full"

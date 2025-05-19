@@ -7,15 +7,20 @@ import WhyUs from '../features/WhyUs/WhyUs'
 import Join from '../features/Join/Join'
 import FAQs from '../features/FAQs/FAQs'
 import DownloadCTA from '../features/DownloadCTA/DownloadCTA'
+import { useBreakpointValue } from '@chakra-ui/react'
+import MobileWorks from '../features/Works/MobileWorks'
 
 
 function HomePage() {
+  
+  const isDesktop = useBreakpointValue({ base: false, lg: true });
+
   return (
     <>
       <HeroHome/>
       <Offer/>
       <Solution/>
-      <Works/>
+      {isDesktop ? <Works/> : <MobileWorks/>}
       <WhyUs/>
       <Join/>
       <FAQs/>

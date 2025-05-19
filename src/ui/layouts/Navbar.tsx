@@ -101,104 +101,125 @@ function Navbar() {
                             {NavbarData.map((item, i) => (
                                 <>
                                  {item?.hasChildren ?
-                                 <Menu key={i}>
-                                    <MenuButton 
-                                        as={Button}
-                                        w="fit-content" 
-                                        rightIcon={<IoIosArrowDown />}
-                                        color={item?.id === id ? "brand.100" : "alt.100"}
-                                        bgColor="transparent"
-                                        _hover={{
-                                            bgColor: "transparent",
-                                            color: "brand.100",
-                                        }}
-                                        p="initial"
-                                    >
-                                            <Text
-                                                key={i}
-                                                fontSize={16}
-                                                fontWeight={item?.id === id ? 600 : 500}
-                                                lineHeight="160%"
-                                                letterSpacing="0%"
-                                                cursor="pointer"
+                                 <Menu key={i} isLazy>
+                                    {({ isOpen, onClose }) => (
+                                        <>
+                                            <MenuButton 
+                                                as={Button}
+                                                w="fit-content" 
+                                                rightIcon={<IoIosArrowDown />}
+                                                color={item?.id === id ? "brand.100" : "alt.100"}
+                                                bgColor="transparent"
+                                                _hover={{
+                                                    bgColor: "transparent",
+                                                    color: "brand.100",
+                                                }}
+                                                p="initial"
+                                                onMouseEnter={(e) => {
+                                                    if (typeof window !== "undefined") {
+                                                      e.currentTarget.click();
+                                                    }
+                                                }}
                                             >
-                                                {item?.display}
-                                            </Text>
-                                    </MenuButton>
-                                 <MenuList
-                                   w="733px"
-                                   h="243px"
-                                   p="20px"
-                                   bgColor="white"
-                                   rounded="20px"
-                                   border="1px solid"
-                                   borderColor="grey.200"
-                                 >
-                                    <SimpleGrid
-                                      w="full"
-                                      columns={2}
-                                      gap="20px"
-                                      bgColor="white"
-                                    >
-                                        {item.submenu?.map((subItem, i) => (
-                                            <Link to={subItem?.url} key={i}>
-                                                <MenuItem w="full" _hover={{ rounded: "12px", bgColor: "grey.100" }}>
-                                                    <HStack
-                                                        w="full"
-                                                        justify="start"
-                                                        align="start"
-                                                        gap="16px"
-                                                        minH="74px"
+                                                    <Text
+                                                        key={i}
+                                                        fontSize={16}
+                                                        fontWeight={item?.id === id ? 600 : 500}
+                                                        lineHeight="160%"
+                                                        letterSpacing="0%"
+                                                        cursor="pointer"
                                                     >
-                                                        <VStack
-                                                            w="60px"
-                                                            h="48px"
-                                                            rounded="12px"
-                                                            justify="center"
-                                                            align="center"
-                                                            bgColor={subItem?.iconBgColor}
-                                                        >
-                                                            <Icon
-                                                              as={subItem?.icon}
-                                                              fontSize="24px"
-                                                            />
+                                                        {item?.display}
+                                                    </Text>
+                                            </MenuButton>
+                                            <MenuList
+                                                w="733px"
+                                                h="243px"
+                                                p="20px"
+                                                bgColor="white"
+                                                rounded="20px"
+                                                border="1px solid"
+                                                borderColor="grey.200"
+                                                onMouseLeave={() => {
+                                                    if (typeof window !== "undefined") {
+                                                      onClose();
+                                                    }
+                                                }}
+                                            >
+                                                <SimpleGrid
+                                                    w="full"
+                                                    columns={2}
+                                                    gap="20px"
+                                                    bgColor="white"
+                                                >
+                                                    {item.submenu?.map((subItem, i) => (
+                                                        <Link to={subItem?.url} key={i}>
+                                                            <MenuItem 
+                                                                bgColor="white" 
+                                                                w="full" 
+                                                                _hover={{ 
+                                                                    rounded: "12px", 
+                                                                    bgColor: "grey.100" 
+                                                                }}>
+                                                                <HStack
+                                                                    w="full"
+                                                                    justify="start"
+                                                                    align="start"
+                                                                    gap="16px"
+                                                                    minH="74px"
+                                                                >
+                                                                    <VStack
+                                                                        w="60px"
+                                                                        h="48px"
+                                                                        rounded="12px"
+                                                                        justify="center"
+                                                                        align="center"
+                                                                        bgColor={subItem?.iconBgColor}
+                                                                    >
+                                                                        <Icon
+                                                                        as={subItem?.icon}
+                                                                        fontSize="24px"
+                                                                        />
 
-                                                        </VStack>
+                                                                    </VStack>
 
-                                                        <VStack
-                                                          w="full"
-                                                          justify="start"
-                                                          align="start"
-                                                          gap="4px"
-                                                        >
-                                                            <Text
-                                                              fontSize={16}
-                                                              fontWeight={600}
-                                                              color="brand.300"
-                                                              lineHeight="160%"
-                                                              letterSpacing="0%"
-                                                            >
-                                                                {subItem?.title}
-                                                            </Text>
+                                                                    <VStack
+                                                                    w="full"
+                                                                    justify="start"
+                                                                    align="start"
+                                                                    gap="4px"
+                                                                    >
+                                                                        <Text
+                                                                        fontSize={16}
+                                                                        fontWeight={600}
+                                                                        color="brand.300"
+                                                                        lineHeight="160%"
+                                                                        letterSpacing="0%"
+                                                                        >
+                                                                            {subItem?.title}
+                                                                        </Text>
 
-                                                            <Text
-                                                              fontSize={14}
-                                                              fontWeight={400}
-                                                              color="grey.500"
-                                                              lineHeight="160%"
-                                                              letterSpacing="0%"
-                                                            >
-                                                                {subItem?.description}
-                                                            </Text>
+                                                                        <Text
+                                                                        fontSize={14}
+                                                                        fontWeight={400}
+                                                                        color="grey.500"
+                                                                        lineHeight="160%"
+                                                                        letterSpacing="0%"
+                                                                        >
+                                                                            {subItem?.description}
+                                                                        </Text>
 
-                                                        </VStack>
-                                                    </HStack>
-                                                </MenuItem>
-                                            
-                                            </Link>
-                                        ))}
-                                    </SimpleGrid>
-                                 </MenuList>
+                                                                    </VStack>
+                                                                </HStack>
+                                                            </MenuItem>
+                                                        
+                                                        </Link>
+                                                    ))}
+                                                </SimpleGrid>
+                                            </MenuList>
+                                        
+                                        </>
+                                    )}
                                </Menu>
 
 
@@ -405,8 +426,8 @@ function Navbar() {
                                                     columns={1}
                                                     gap="12px"
                                                 >
-                                                    {item.submenu?.map((subItem, i) => (
-                                                        <Link to={subItem?.url} onClick={onToggle}>
+                                                    {item.submenu?.map((subItem, index) => (
+                                                        <Link key={index} to={subItem?.url} onClick={onToggle}>
                                                                 <HStack
                                                                     w="full"
                                                                     justify="start"

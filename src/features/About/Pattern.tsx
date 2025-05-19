@@ -158,7 +158,7 @@ function Pattern() {
                                         lineHeight="160%"
                                         letterSpacing="0%"
                                         bgColor="transparent"
-                                        color={selectedTab === item.display ? "brand.100" : "brand.100"}
+                                        color={selectedTab === item.display ? "brand.100" : "white"}
                                         zIndex={2}
                                         _hover={{}}
                                         onClick={() => setSelectedTab(item.display)}

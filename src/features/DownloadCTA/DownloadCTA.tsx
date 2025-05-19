@@ -40,7 +40,8 @@ function DownloadCTA() {
       w="full"
       justify="start"
       align="start"
-      py={["4rem", "4rem", "6rem"]}
+      pt={["4rem", "4rem", "3rem"]}
+      pb={["4rem", "4rem", "2rem"]}
       position="relative"
       bgColor="brand.300"
       bgImage="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/zejtenswkjcihtoaz1gk"

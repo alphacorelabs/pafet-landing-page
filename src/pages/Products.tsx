@@ -10,9 +10,13 @@ import DownloadCTA from '../features/DownloadCTA/DownloadCTA'
 import { useParams } from 'react-router-dom'
 import { productsData } from '../data/ProductsData'
 import { ProductProps } from '../types/interfaces/ProductProps'
+import { useBreakpointValue } from '@chakra-ui/react'
+import MobileWorks from '../features/Works/MobileWorks'
 
 
 function ProductsPage() {
+
+   const isDesktop = useBreakpointValue({ base: false, lg: true });
 
     const { slug } = useParams<{ slug: string }>();
 
@@ -23,7 +27,7 @@ function ProductsPage() {
       <HeroProduct product={filteredProduct} />
       <Offer/>
       <Solution/>
-      <Works/>
+      {isDesktop ? <Works/> : <MobileWorks/>}
       <WhyUs/>
       <Join/>
       <FAQs/>

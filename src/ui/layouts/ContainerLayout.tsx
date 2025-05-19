@@ -4,7 +4,7 @@ import React from 'react'
 function ContainerLayout({ children }: { children: React.ReactNode }) {
   return (
     <VStack
-        w={["full", "full", "full", "95%"]}
+        w={["full", "full", "full", "85%"]}
         px={["20px", "20px", "20px", "initial"]}
         mx={["initial", "initial", "initial", "auto"]}
         justify="start"

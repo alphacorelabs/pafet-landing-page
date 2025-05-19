@@ -5,7 +5,7 @@ import { MainHeadingProps } from '../types/interfaces/MainHeadingProps'
 function MainHeading({ title, subtitle, isCenter }: MainHeadingProps) {
   return (
     <VStack
-        w={isCenter ? ["full", "full", "full", "52%"]: "full"}
+        w={isCenter ? ["full", "full", "full", "60%"]: "full"}
         mx={isCenter ? ["initial", "initial", "initial", "auto"] : "initial"}
         justify={isCenter ? "center" : ["center", "center", "start"]}
         align={isCenter ? "center" : ["center", "center", "start"]}
