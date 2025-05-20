@@ -51,7 +51,7 @@ function WhyUs() {
       w="full"
       justify="start"
       align="start"
-      py={["4rem", "4rem", "6rem"]}
+      py={["4rem", "4rem", "6rem"]} 
     >
         <ContainerLayout>
             <VStack

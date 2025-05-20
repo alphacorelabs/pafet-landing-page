@@ -81,7 +81,7 @@ function Solution() {
                           left={0}
                           right={0}
                           bottom={0}
-                          backdropFilter="blur(10px)"
+                          backdropFilter="blur(5px)"
                         />
                         <Heading
                           fontSize={[24, 24, 28]}
@@ -92,7 +92,7 @@ function Solution() {
                           zIndex={2}
                           p="26px"
                         >
-                            You work globally.Your money should too.
+                            You work globally. Your money should too.
                         </Heading>
                     </VStack>
 

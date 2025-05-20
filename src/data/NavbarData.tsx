@@ -91,20 +91,20 @@ export const navbarIcons: NavIconProps[] = [
 export const socialIcons = [
     {
         title: "Instagram",
-        url: "https://instagram.com",
+        url: "https://instagram.com/usepafet",
         icon: RiInstagramFill 
     },
 
     {
         title: "Twitter",
-        url: "https://x.com",
+        url: "https://x.com/usepafet",
         icon: FaXTwitter 
     },
 
 
     {
         title: "LinkedIn",
-        url: "https://linkedin.com",
+        url: "https://linkedin.com/company/usepafet",
         icon: FaLinkedinIn 
     },
 ]

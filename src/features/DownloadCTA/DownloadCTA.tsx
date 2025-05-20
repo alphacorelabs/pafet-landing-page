@@ -83,7 +83,7 @@ function DownloadCTA() {
 
                   <HStack w="full" justify="start" align="center" gap="10px">
                     {socialIcons.map((item, i) => (
-                      <Link key={i} to={item?.url}>
+                      <Link key={i} to={item?.url} target="_blank" rel="noopener noreferrer">
                         <Icon
                           as={item.icon}
                           fontSize="24px"
@@ -103,7 +103,7 @@ function DownloadCTA() {
               <Image
                 w="full"
                 h="full"
-                src="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/hny5ltokeosen4ouanxy"
+                src="https://miscfiles.nyc3.cdn.digitaloceanspaces.com/Frame%201618868140.png"
                 alt="download-cta-image"
                 objectFit="contain"
               />

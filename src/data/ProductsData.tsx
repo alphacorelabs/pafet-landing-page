@@ -13,7 +13,7 @@ export const productsData: ProductProps[] = [
             "Hold funds in dollars to protect against naira devaluation",
             "No monthly fees, no hidden charges",
         ],
-        imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/k1rovrjzpz1ajkwsv5us",
+        imageUrl: "https://miscfiles.nyc3.cdn.digitaloceanspaces.com/Frame%202147207687.webp",
         slug: "usd-accounts",
         callToAction: "Create Your USD Account",
         callToActionUrl: "/",
