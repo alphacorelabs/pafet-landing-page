@@ -6,7 +6,7 @@ import { OfferProps } from "../types/interfaces/OfferProps";
       title: "Receive payments like a local",
       description:
         "Get a US, UK, or EU bank account in minutes. Access your global payments anytime.",
-       imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/f4b43xly9aofikjhhrbw",
+       imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/sbx1nalxpet9lbfg7e07",
        imageWidth: "357.35px",
        imageHeight: "109.8px", 
     },
@@ -15,7 +15,7 @@ import { OfferProps } from "../types/interfaces/OfferProps";
       title: "Bill clients with professional invoices",
       description:
         "Create and send professional invoices to bill clients and get paid directly to your pafect account.",
-      imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/fwpqzhnhgbboxhjhtsec",
+      imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/gcmp9qgjrvsijyv8kkqi",
       imageWidth: "300px",
       imageHeight: "185px", 
     },

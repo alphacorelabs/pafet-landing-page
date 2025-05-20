@@ -61,29 +61,59 @@ function DownloadCTA() {
           <SimpleGrid w="full" columns={[1, 1, 1, 2]} gap="60px">
             <VStack w="full" justify="start" align="start" gap="40px">
               <VStack w="full" justify="start" align="start" gap="20px">
-                <Heading fontSize={[30, 30, 56]} fontWeight={600} color="white" lineHeight="120%" letterSpacing="-1%">
+                <Heading
+                  fontSize={[30, 30, 56]}
+                  fontWeight={600}
+                  color="white"
+                  lineHeight="120%"
+                  letterSpacing="-1%"
+                >
                   The way you get paid shouldn’t hold you back.
                 </Heading>
 
-                <Text fontSize={[16, 16, 18]} fontWeight={400} color="grey.500" lineHeight="160%" letterSpacing="0%">
-                  Pafet gives you everything you need to earn globally, spend freely, and stay in control. Get everything you need to earn,
+                <Text
+                  fontSize={[16, 16, 18]}
+                  fontWeight={400}
+                  color="grey.500"
+                  lineHeight="160%"
+                  letterSpacing="0%"
+                >
+                  Pafet gives you everything you need to earn globally, spend
+                  freely, and stay in control. Get everything you need to earn,
                   hold, and spend in USD.
                 </Text>
               </VStack>
 
               <VStack w="full" justify="start" align="start" gap="20px">
-                <Text fontSize={14} fontWeight={400} lineHeight="160%" color="brand.900" textTransform="uppercase">
+                <Text
+                  fontSize={14}
+                  fontWeight={400}
+                  lineHeight="160%"
+                  color="brand.900"
+                  textTransform="uppercase"
+                >
                   Contact Us
                 </Text>
 
                 <VStack w="full" justify="start" align="start" gap="16px">
-                  <Text fontSize={16} fontWeight={600} lineHeight="160%" letterSpacing="0%" color="brand.900">
+                  <Text
+                    fontSize={16}
+                    fontWeight={600}
+                    lineHeight="160%"
+                    letterSpacing="0%"
+                    color="brand.900"
+                  >
                     hello@usePafet.com
                   </Text>
 
                   <HStack w="full" justify="start" align="center" gap="10px">
                     {socialIcons.map((item, i) => (
-                      <Link key={i} to={item?.url} target="_blank" rel="noopener noreferrer">
+                      <Link
+                        key={i}
+                        to={item?.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Icon
                           as={item.icon}
                           fontSize="24px"
@@ -99,7 +129,14 @@ function DownloadCTA() {
               </VStack>
             </VStack>
 
-            <VStack w="full" justify="center" align="center" gap="40px" data-aos="zoom-in" data-aos-duration="1000">
+            <VStack
+              w="full"
+              justify="center"
+              align="center"
+              gap="40px"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <Image
                 w="full"
                 h="full"
@@ -108,7 +145,14 @@ function DownloadCTA() {
                 objectFit="contain"
               />
 
-              <CtaButton isLink={true} isSmall={true} isGradient={true} isDownload={true} btnText="Download the Pafet App" btnUrl="/" />
+              <CtaButton
+                isLink={true}
+                isSmall={true}
+                isGradient={true}
+                isDownload={true}
+                btnText="Download the Pafet App"
+                btnUrl="/"
+              />
             </VStack>
           </SimpleGrid>
         </VStack>

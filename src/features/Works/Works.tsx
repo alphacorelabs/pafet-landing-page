@@ -89,42 +89,71 @@ function Works() {
   );
 
   return (
-    <Stack w="full" justify="start" align="start" ref={root}>
+    <Stack 
+        w="full" 
+        justify="start" 
+        align="start" 
+        ref={root}
+    >
       <ContainerLayout>
         <VStack w="full" justify="start" align="start" gap="40px">
-          <MainHeading subtitle="How It Works" title="Quickstart Your Global Money Moves with Pafet" isCenter={true} />
+          <MainHeading
+            subtitle="How It Works"
+            title="Quickstart Your Global Money Moves with Pafet"
+            isCenter={true}
+          />
 
-          <Box w="full" ref={containerRef} minH={`${worksData.length * 50}vh`}>
-            <VStack w="full" justify="start" align="start" gap="24px">
+          <Box 
+            w="full" 
+            ref={containerRef} 
+            minH={`${worksData.length * 50}vh`}
+          >
+            <VStack 
+                w="full" 
+                justify="start" 
+                align="start" 
+                gap="24px"
+            >
               {worksData.map((item: any, i: number) => (
                 <HStack
-                key={i}
-                w={["full", "full", "80%"]}
-                mx={["initial", "initial", "auto"]}
-                justify="space-between"
-                align="center"
-                wrap={["wrap", "wrap", "nowrap"]}
-                h={["full", "full", "381px"]}
-                rounded="20px"
-                border="2px solid"
-                borderColor={activeBox === i ? "brand.100" : "grey.200"}
-                p="40px"
-                gap={["40px", "40px", "120px"]}
-                ref={(el) => {
-                  boxesRef.current[i] = el;
-                }}
-                zIndex={i === worksData.length - 1 ? 10 : 1}
-                overflow="hidden" // Add this to prevent content overflow
-              >
-                 <VStack
-    w="full"
-    justify="start"
-    align="start"
-    gap="8px"
-    zIndex={i === worksData.length - 1 ? 10 : 2}
-  >
-                    <VStack w="full" justify="start" align="start" position="relative">
-                      <Heading fontSize="160px" fontWeight={400} color="brand.700" lineHeight="100%" letterSpacing="-1%">
+                  key={i}
+                  w={["full", "full", "80%"]}
+                  mx={["initial", "initial", "auto"]}
+                  justify="space-between"
+                  align="center"
+                  wrap={["wrap", "wrap", "nowrap"]}
+                  h={["full", "full", "381px"]}
+                  rounded="20px"
+                  border="2px solid"
+                  borderColor={activeBox === i ? "brand.100" : "grey.200"}
+                  p="40px"
+                  gap={["40px", "40px", "120px"]}
+                  ref={(el) => {
+                    boxesRef.current[i] = el;
+                  }}
+                  zIndex={i === worksData.length - 1 ? 10 : 1}
+                  overflow="hidden" 
+                >
+                  <VStack
+                    w="full"
+                    justify="start"
+                    align="start"
+                    gap="8px"
+                    zIndex={i === worksData.length - 1 ? 10 : 2}
+                  >
+                    <VStack
+                      w="full"
+                      justify="start"
+                      align="start"
+                      position="relative"
+                    >
+                      <Heading
+                        fontSize="160px"
+                        fontWeight={400}
+                        color="brand.700"
+                        lineHeight="100%"
+                        letterSpacing="-1%"
+                      >
                         {item?.id}
                       </Heading>
 
@@ -138,35 +167,53 @@ function Works() {
                       />
                     </VStack>
 
-                    <VStack w="full" justify="start" align="start" gap="8px" zIndex={i === worksData.length - 1 ? 10 : 2}>
-                      <Heading fontSize={[20, 20, 24]} fontWeight={600} color="brand.300" lineHeight="120%" letterSpacing="-4%">
+                    <VStack
+                      w="full"
+                      justify="start"
+                      align="start"
+                      gap="8px"
+                      zIndex={i === worksData.length - 1 ? 10 : 2}
+                    >
+                      <Heading
+                        fontSize={[20, 20, 24]}
+                        fontWeight={600}
+                        color="brand.300"
+                        lineHeight="120%"
+                        letterSpacing="-4%"
+                      >
                         {item?.title}
                       </Heading>
 
-                      <Text fontSize={16} fontWeight={400} color="grey.500" lineHeight="160%" letterSpacing="0%">
+                      <Text
+                        fontSize={16}
+                        fontWeight={400}
+                        color="grey.500"
+                        lineHeight="160%"
+                        letterSpacing="0%"
+                      >
                         {item?.content}
                       </Text>
                     </VStack>
                   </VStack>
 
                   <Box
-    w="full"
-    h="full"
-    position="relative"
-    overflow="hidden" // Ensure image doesn't overflow
-    maxH="300px" // Limit maximum height
-    display="flex"
-    justifyContent="center"
-    alignItems="center"
-  >
-    <Image
-      maxW="100%"
-      maxH="100%"
-      objectFit="contain" // Maintain aspect ratio
-      src={item?.imageUrl}
-      alt={`${item?.title?.toLowerCase()}-image`}
-    />
-  </Box>
+                    w="full"
+                    h="full"
+                    position="relative"
+                    overflow="hidden" 
+                    maxH="300px" 
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                  >
+                    <Image
+                      maxW="100%"
+                      maxH="100%"
+                      objectFit="contain" 
+                      src={item?.imageUrl}
+                      alt={`${item?.title?.toLowerCase()}-image`}
+                    />
+                  </Box>
                 </HStack>
               ))}
             </VStack>

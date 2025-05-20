@@ -40,9 +40,9 @@ function Footer() {
       align="start"
       bgColor="brand.300"
       gap="40px"
-      h={["1040px", "680px", "540px"]}
+      h={["1040px", "680px", "750px", "540px"]}
       overflow="hidden"
-      pt={["2rem", "2rem", "3rem"]}
+      pt={["2rem", "2rem", "2rem", "3rem"]}
     >
         <ContainerLayout>
             <VStack
@@ -50,7 +50,7 @@ function Footer() {
                 justify="start"
                 align="start"
                 gap="20px"
-                px={["20px", "20px", "120px"]}
+                px={["20px", "20px", "20px", "120px"]}
             >
                 <SimpleGrid
                     w="full"

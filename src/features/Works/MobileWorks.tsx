@@ -103,17 +103,16 @@ function MobileWorks() {
                                     {worksData.map((item: any, i: number) => (
                                         <SwiperSlide key={i}>
                                             <HStack
-                                              w={["full", "full", "80%"]}
-                                              mx={["initial", "initial", "auto"]}
+                                              w="full"
                                               justify="space-between"
                                               align="center"
-                                              wrap={["wrap", "wrap", "nowrap"]}
-                                              h={["full", "full", "381px"]}
+                                              wrap="wrap"
+                                              h="full"
                                               rounded="20px"
                                               border="2px solid"
                                               borderColor="grey.200"
                                               p="40px"
-                                              gap={["40px", "40px", "120px"]}
+                                              gap="40px"
                                             >
                                                 <VStack
                                                     w="full"

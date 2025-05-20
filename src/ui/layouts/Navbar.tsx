@@ -184,10 +184,10 @@ function Navbar() {
                                                                     </VStack>
 
                                                                     <VStack
-                                                                    w="full"
-                                                                    justify="start"
-                                                                    align="start"
-                                                                    gap="4px"
+                                                                        w="full"
+                                                                        justify="start"
+                                                                        align="start"
+                                                                        gap="4px"
                                                                     >
                                                                         <Text
                                                                         fontSize={16}
@@ -200,11 +200,11 @@ function Navbar() {
                                                                         </Text>
 
                                                                         <Text
-                                                                        fontSize={14}
-                                                                        fontWeight={400}
-                                                                        color="grey.500"
-                                                                        lineHeight="160%"
-                                                                        letterSpacing="0%"
+                                                                            fontSize={14}
+                                                                            fontWeight={400}
+                                                                            color="grey.500"
+                                                                            lineHeight="160%"
+                                                                            letterSpacing="0%"
                                                                         >
                                                                             {subItem?.description}
                                                                         </Text>
