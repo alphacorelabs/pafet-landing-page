@@ -38,31 +38,11 @@ function HeroHome() {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
 
   return (
-    <Stack
-      w="full"
-      justify="start"
-      align="start"
-      pt="6rem"
-      pb={["4rem", "4rem", "6rem"]}
-    >
+    <Stack w="full" justify="start" align="start" pt="6rem" pb={["4rem", "4rem", "6rem"]}>
       <ContainerLayout>
-        <VStack
-          w="full"
-          justify="start"
-          align="start"
-          rounded="40px"
-          overflow="hidden"
-          bgColor="brand.500"
-        >
+        <VStack w="full" justify="start" align="start" rounded="40px" overflow="hidden" bgColor="brand.500">
           <SimpleGrid w="full" columns={[1, 1, 1, 2]} columnGap="80px">
-            <VStack
-              w="full"
-              justify="start"
-              align="start"
-              gap="40px"
-              py={["40px", "40px", "100px"]}
-              pl={["20px", "20px", "96px"]}
-            >
+            <VStack w="full" justify="start" align="start" gap="40px" py={["40px", "40px", "100px"]} pl={["20px", "20px", "96px"]}>
               <HStack
                 w="fit-content"
                 justify="space-between"
@@ -76,33 +56,18 @@ function HeroHome() {
               >
                 <HStack w="fit-content" justify="space-between" align="center">
                   <Icon as={DocumentIcon} fontSize="24px" color="brand.500" />
-                  <Text
-                    fontSize={18}
-                    fontWeight={600}
-                    lineHeight="160%"
-                    letterSpacing="0%"
-                  >
+                  <Text fontSize={18} fontWeight={600} lineHeight="160%" letterSpacing="0%">
                     Invoice
                   </Text>
                 </HStack>
 
-                <Text
-                  fontSize={18}
-                  fontWeight={600}
-                  lineHeight="160%"
-                  letterSpacing="0%"
-                >
+                <Text fontSize={18} fontWeight={600} lineHeight="160%" letterSpacing="0%">
                   =
                 </Text>
 
                 <HStack w="fit-content" justify="space-between" align="center">
                   <Icon as={MoneyReceiveIcon} fontSize="24px" />
-                  <Text
-                    fontSize={18}
-                    fontWeight={600}
-                    lineHeight="160%"
-                    letterSpacing="0%"
-                  >
+                  <Text fontSize={18} fontWeight={600} lineHeight="160%" letterSpacing="0%">
                     Income
                   </Text>
                 </HStack>
@@ -126,25 +91,12 @@ function HeroHome() {
                   letterSpacing={["0%", "0%", "-3%"]}
                   color="grey.500"
                 >
-                  Pafet gives you a virtual USD account, card, and tools to
-                  invoice global clients — all in one place.
+                  Pafet gives you a virtual USD account, card, and tools to invoice global clients — all in one place.
                 </Text>
               </VStack>
 
-              <HStack
-                w="full"
-                justify="start"
-                align="center"
-                gap="20px"
-                wrap={["wrap", "wrap", "nowrap"]}
-              >
-                <CtaButton
-                  isLink={true}
-                  isSmall={false}
-                  isGradient={true}
-                  btnText="Create Your USD Account"
-                  btnUrl="/auth/sign-up"
-                />
+              <HStack w="full" justify="start" align="center" gap="20px" wrap={["wrap", "wrap", "nowrap"]}>
+                <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Create Your USD Account" btnUrl="#" />
 
                 <HStack
                   w="102px"

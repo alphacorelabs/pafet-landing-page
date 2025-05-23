@@ -4,33 +4,33 @@ export const footerLinks: FooterSectionProps[] = [
     {
       title: "Products",
       links: [
-        { display: "USD Account", url: "/usd-account" },
-        { display: "Invoice Generator", url: "/invoice-generator" },
-        { display: "Virtual USD Card", url: "/virtual-usd-card" },
-        { display: "Currency Exchanger", url: "/currency-exchanger" },
+        { display: "USD Account", url: "/products/usd-accounts" },
+        { display: "Invoice Generator", url: "/products/invoice-generator" },
+        { display: "Virtual USD Card", url: "/products/virtual-usd-card" },
+        { display: "Currency Exchanger", url: "/products/currency-exchange" },
       ],
     },
     {
       title: "Company",
       links: [
-        { display: "About us", url: "/about" },
-        { display: "Careers", url: "/careers" },
-        { display: "Blog", url: "/blog" },
+        { display: "About us", url: "/about-us" },
+        { display: "Careers", url: "#" },
+        { display: "Blog", url: "#" },
       ],
     },
     {
       title: "Legal",
       links: [
-        { display: "Terms of Service", url: "/terms" },
-        { display: "Privacy Policy", url: "/privacy" },
-        { display: "Cookies Policy", url: "/cookies" },
+        { display: "Terms of Service", url: "#" },
+        { display: "Privacy Policy", url: "#" },
+        { display: "KYC/AML", url: "#" },
       ],
     },
     {
       title: "Support",
       links: [
-        { display: "Help", url: "/help" },
-        { display: "Tutorials", url: "/tutorials" },
+        { display: "Help", url: "/support" },
+        
         { display: "Contact us", url: "/contact" },
         { display: "FAQs", url: "/faqs" },
       ],
