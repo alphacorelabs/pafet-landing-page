@@ -70,7 +70,7 @@ function Navbar() {
                   <Image
                     w="full"
                     h="full"
-                    src="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/lrjerngdi9f1d2gxsfte"
+                    src="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/aopbsrnbxqzqws5gijem"
                     alt="pafet-logo"
                     objectFit="cover"
                   />
@@ -126,7 +126,12 @@ function Navbar() {
                                 }
                               }}
                             >
-                              <SimpleGrid w="full" columns={2} gap="20px" bgColor="white">
+                              <SimpleGrid
+                                w="full"
+                                columns={2}
+                                gap="20px"
+                                bgColor="white"
+                              >
                                 {item.submenu?.map((subItem, i) => (
                                   <Link to={subItem?.url} key={i}>
                                     <MenuItem
@@ -137,7 +142,13 @@ function Navbar() {
                                         bgColor: "grey.100",
                                       }}
                                     >
-                                      <HStack w="full" justify="start" align="start" gap="16px" minH="74px">
+                                      <HStack
+                                        w="full"
+                                        justify="start"
+                                        align="start"
+                                        gap="16px"
+                                        minH="74px"
+                                      >
                                         <VStack
                                           w="60px"
                                           h="48px"
@@ -146,15 +157,35 @@ function Navbar() {
                                           align="center"
                                           bgColor={subItem?.iconBgColor}
                                         >
-                                          <Icon as={subItem?.icon} fontSize="24px" />
+                                          <Icon
+                                            as={subItem?.icon}
+                                            fontSize="24px"
+                                          />
                                         </VStack>
 
-                                        <VStack w="full" justify="start" align="start" gap="4px">
-                                          <Text fontSize={16} fontWeight={600} color="brand.300" lineHeight="160%" letterSpacing="0%">
+                                        <VStack
+                                          w="full"
+                                          justify="start"
+                                          align="start"
+                                          gap="4px"
+                                        >
+                                          <Text
+                                            fontSize={16}
+                                            fontWeight={600}
+                                            color="brand.300"
+                                            lineHeight="160%"
+                                            letterSpacing="0%"
+                                          >
                                             {subItem?.title}
                                           </Text>
 
-                                          <Text fontSize={14} fontWeight={400} color="grey.500" lineHeight="160%" letterSpacing="0%">
+                                          <Text
+                                            fontSize={14}
+                                            fontWeight={400}
+                                            color="grey.500"
+                                            lineHeight="160%"
+                                            letterSpacing="0%"
+                                          >
                                             {subItem?.description}
                                           </Text>
                                         </VStack>
@@ -219,7 +250,12 @@ function Navbar() {
                 <Divider orientation="vertical" />
               </Center>
 
-              <HStack w="fit-content" justify="space-between" align="center" gap="24px">
+              <HStack
+                w="fit-content"
+                justify="space-between"
+                align="center"
+                gap="24px"
+              >
                 <Link to="#">
                   <Button
                     variant="link"
@@ -236,7 +272,13 @@ function Navbar() {
                   </Button>
                 </Link>
 
-                <CtaButton isLink={true} isGradient={true} btnText="Get Started" btnUrl="#" isSmall={true} />
+                <CtaButton
+                  isLink={true}
+                  isGradient={true}
+                  btnText="Get Started"
+                  btnUrl="#"
+                  isSmall={true}
+                />
               </HStack>
             </HStack>
           </HStack>
@@ -249,7 +291,7 @@ function Navbar() {
                 <Image
                   w="full"
                   h="full"
-                  src="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/lrjerngdi9f1d2gxsfte"
+                  src="https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/aopbsrnbxqzqws5gijem"
                   alt="pafet-logo"
                   objectFit="cover"
                 />
@@ -270,10 +312,22 @@ function Navbar() {
 
           <Drawer size="md" placement={"top"} onClose={onClose} isOpen={isOpen}>
             <DrawerOverlay />
-            <DrawerContent bgColor="white" h="784px" overflowY="auto" border="1px solid" borderColor="brand.300">
+            <DrawerContent
+              bgColor="white"
+              h="784px"
+              overflowY="auto"
+              border="1px solid"
+              borderColor="brand.300"
+            >
               <DrawerCloseButton top="25px" right="25px" />
               <DrawerBody>
-                <VStack w="full" mt="100px" gap="20px" justify="start" align="start">
+                <VStack
+                  w="full"
+                  mt="100px"
+                  gap="20px"
+                  justify="start"
+                  align="start"
+                >
                   {NavbarData.map((item, i) => (
                     <>
                       {item?.hasChildren ? (
@@ -293,7 +347,8 @@ function Navbar() {
                                 color: "brand.100",
                               }}
                               _expanded={{
-                                color: item?.id === id ? "brand.100" : "alt.100",
+                                color:
+                                  item?.id === id ? "brand.100" : "alt.100",
                               }}
                               p="initial"
                             >
@@ -310,10 +365,20 @@ function Navbar() {
                               <AccordionIcon />
                             </AccordionButton>
 
-                            <AccordionPanel w="full" h="full" bgColor="grey.100" rounded="20px" p="12px">
+                            <AccordionPanel
+                              w="full"
+                              h="full"
+                              bgColor="grey.100"
+                              rounded="20px"
+                              p="12px"
+                            >
                               <SimpleGrid w="full" columns={1} gap="12px">
                                 {item.submenu?.map((subItem, index) => (
-                                  <Link key={index} to={subItem?.url} onClick={onToggle}>
+                                  <Link
+                                    key={index}
+                                    to={subItem?.url}
+                                    onClick={onToggle}
+                                  >
                                     <HStack
                                       w="full"
                                       justify="start"
@@ -335,15 +400,35 @@ function Navbar() {
                                         align="center"
                                         bgColor={subItem?.iconBgColor}
                                       >
-                                        <Icon as={subItem?.icon} fontSize="24px" />
+                                        <Icon
+                                          as={subItem?.icon}
+                                          fontSize="24px"
+                                        />
                                       </VStack>
 
-                                      <VStack w="full" justify="start" align="start" gap="4px">
-                                        <Text fontSize={16} fontWeight={600} color="brand.300" lineHeight="160%" letterSpacing="0%">
+                                      <VStack
+                                        w="full"
+                                        justify="start"
+                                        align="start"
+                                        gap="4px"
+                                      >
+                                        <Text
+                                          fontSize={16}
+                                          fontWeight={600}
+                                          color="brand.300"
+                                          lineHeight="160%"
+                                          letterSpacing="0%"
+                                        >
                                           {subItem?.title}
                                         </Text>
 
-                                        <Text fontSize={14} fontWeight={400} color="grey.500" lineHeight="160%" letterSpacing="0%">
+                                        <Text
+                                          fontSize={14}
+                                          fontWeight={400}
+                                          color="grey.500"
+                                          lineHeight="160%"
+                                          letterSpacing="0%"
+                                        >
                                           {subItem?.description}
                                         </Text>
                                       </VStack>
@@ -373,36 +458,80 @@ function Navbar() {
                     </>
                   ))}
 
-                  <HStack w="full" justify="start" align="center" gap="10px" mt="40px">
-                    <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Create Your USD Account" btnUrl="#" />
+                  <VStack
+                    w="full"
+                    justify="center"
+                    align="center"
+                    gap="20px"
+                    mt="40px"
+                  >
+                        <Link to="#" style={{ display: "block", width: "100%" }}>
+                            <Button
+                                w="full"
+                                bgColor="white"
+                                border="1px solid"
+                                borderColor="alt.200"
+                                py="28px"
+                                px="24px"
+                                rounded="full"
+                                color="grey.700"
+                                fontSize={16}
+                                fontWeight={500}
+                                lineHeight="160%"
+                                letterSpacing="0%"
+                                _hover={{
+                                    bgColor: "brand.100",
+                                    color: "white",
+                                }}
+                            >
+                                Sign In
+                            </Button>
+                        </Link>
 
                     <HStack
-                      w="full"
-                      h="56px"
-                      justify="center"
-                      align="center"
-                      rounded="full"
-                      bgColor="white"
-                      border="1px solid"
-                      borderColor="alt.200"
-                      py="16px"
-                      px="16px"
-                      backdropFilter="blur(22.598642349243164px)"
+                        w="full"
+                        justify="start"
+                        align="center"
+                        gap="10px"
                     >
-                      {navbarIcons.map((item: NavIconProps, i: number) => (
-                        <Link to={item?.url} style={{ display: "block" }}>
-                          <Icon
-                            as={item.icon}
-                            fontSize="22px"
-                            mt="4px"
-                            _hover={{
-                              color: "brand.100",
-                            }}
-                          />
-                        </Link>
-                      ))}
+                        <CtaButton
+                            isLink={true}
+                            isSmall={false}
+                            isGradient={true}
+                            btnText="Create Your USD Account"
+                            btnUrl="#"
+                        />
+
+                        <HStack
+                            w="full"
+                            h="56px"
+                            justify="center"
+                            align="center"
+                            rounded="full"
+                            bgColor="white"
+                            border="1px solid"
+                            borderColor="alt.200"
+                            py="16px"
+                            px="16px"
+                            backdropFilter="blur(22.598642349243164px)"
+                        >
+                            {navbarIcons.map((item: NavIconProps, i: number) => (
+                                <Link to={item?.url} style={{ display: "block" }}>
+                                <Icon
+                                    as={item.icon}
+                                    fontSize="22px"
+                                    mt="4px"
+                                    _hover={{
+                                    color: "brand.100",
+                                    }}
+                                />
+                                </Link>
+                            ))}
+                        </HStack>
                     </HStack>
-                  </HStack>
+
+                  </VStack>
+
                 </VStack>
               </DrawerBody>
             </DrawerContent>

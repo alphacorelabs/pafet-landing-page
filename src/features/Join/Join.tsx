@@ -48,106 +48,121 @@ function Join() {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <Stack w="full" justify="start" align="start" py={["4rem", "4rem", "6rem"]} bgColor="alt.300">
+    <Stack
+      w="full"
+      justify="start"
+      align="start"
+      py={["4rem", "4rem", "6rem"]}
+      bgColor="alt.300"
+    >
       <ContainerLayout>
-        <VStack w="full" justify="start" align="start" gap="40px">
-          <MainHeading title="Join other happy users of Pafet across Africa" subtitle="Join Pafet" isCenter={true} />
+        <VStack 
+          w="full" 
+          justify="start" 
+          align="start" 
+          gap="40px"
+        >
+          <MainHeading
+            title="Join other happy users of Pafet across Africa"
+            subtitle="Join Pafet"
+            isCenter={true}
+          />
 
           {isDesktop ? (
-        <Flex
-        w="full"
-        justify="center"
-        align="center"
-        position="relative"
-      >
-        {joinData.map((item: any, i: number) => {
-          const isActive = isHovering ? (i === activeCardIndex) : (i === 1);
-          
-          return (
-            <VStack
-              key={i}
-              w={isActive ? "40%" : "30%"}
-              h="540px"
-              justify="end"
-              align="end"
-              p="20px"
-              bgImage={item?.imageUrl}
-              bgPos="center"
-              bgSize="cover"
-              overflow="hidden"
-              rounded="30px"
+            <Flex 
+              w="full" 
+              justify="center" 
+              align="center" 
               position="relative"
-              filter={isActive ? "initial" : "grayscale(90%)"}
-              role="group"
-              cursor="pointer"
-              transition="all 0.4s ease-in-out"
-              mx="8px"
-              onMouseEnter={() => {
-                setActiveCardIndex(i);
-                setIsHovering(true);
-              }}
-              onMouseLeave={() => {
-                setIsHovering(false);
-              }}
-              _after={{
-                content: '" "',
-                w: "full",
-                h: "full",
-                inset: 0,
-                position: "absolute",
-                bg: "linear-gradient(180deg, rgba(0, 0, 0, 0) 35.19%, rgba(0, 0, 0, 0.75) 88.52%)",
-                zIndex: 1,
-              }}
             >
-              <VStack
-                w="full"
-                justify="start"
-                align="start"
-                gap="8px"
-                zIndex={2}
-                transition="all 0.2s ease-in-out"
-                _groupHover={{
-                  h: "140px",
-                  mb: "10px",
-                }}
-              >
-                <Heading
-                  fontSize={[20, 20, 24]}
-                  fontFamily="general"
-                  fontWeight={600}
-                  color="white"
-                  lineHeight="120%"
-                  letterSpacing="-3%"
-                >
-                  {item?.name}
-                </Heading>
+              {joinData.map((item: any, i: number) => {
+                const isActive = isHovering ? i === activeCardIndex : i === 1;
 
-                <Text
-                  fontSize={[18, 18, 20]}
-                  fontWeight={500}
-                  lineHeight="120%"
-                  letterSpacing="-3%"
-                  color="alt.400"
-                >
-                  {item?.role}
-                </Text>
+                return (
+                  <VStack
+                    key={i}
+                    w={isActive ? "40%" : "30%"}
+                    h="540px"
+                    justify="end"
+                    align="end"
+                    p="20px"
+                    bgImage={item?.imageUrl}
+                    bgPos="center"
+                    bgSize="cover"
+                    overflow="hidden"
+                    rounded="30px"
+                    position="relative"
+                    filter={isActive ? "initial" : "grayscale(90%)"}
+                    role="group"
+                    cursor="pointer"
+                    transition="all 0.4s ease-in-out"
+                    mx="8px"
+                    onMouseEnter={() => {
+                      setActiveCardIndex(i);
+                      setIsHovering(true);
+                    }}
+                    onMouseLeave={() => {
+                      setIsHovering(false);
+                    }}
+                    _after={{
+                      content: '" "',
+                      w: "full",
+                      h: "full",
+                      inset: 0,
+                      position: "absolute",
+                      bg: "linear-gradient(180deg, rgba(0, 0, 0, 0) 35.19%, rgba(0, 0, 0, 0.75) 88.52%)",
+                      zIndex: 1,
+                    }}
+                  >
+                    <VStack
+                      w="full"
+                      justify="start"
+                      align="start"
+                      gap="8px"
+                      zIndex={2}
+                      transition="all 0.2s ease-in-out"
+                      _groupHover={{
+                        h: "140px",
+                        mb: "10px",
+                      }}
+                    >
+                      <Heading
+                        fontSize={[20, 20, 24]}
+                        fontFamily="general"
+                        fontWeight={600}
+                        color="white"
+                        lineHeight="120%"
+                        letterSpacing="-3%"
+                      >
+                        {item?.name}
+                      </Heading>
 
-                <Heading
-                  display={isActive ? "flex" : "none"}
-                  mt="10px"
-                  fontSize={16}
-                  fontWeight={400}
-                  lineHeight="120%"
-                  letterSpacing="-3%"
-                  color="white"
-                >
-                  {item?.remark}
-                </Heading>
-              </VStack>
-            </VStack>
-          );
-        })}
-      </Flex>
+                      <Text
+                        fontSize={[18, 18, 20]}
+                        fontWeight={500}
+                        lineHeight="120%"
+                        letterSpacing="-3%"
+                        color="alt.400"
+                      >
+                        {item?.role}
+                      </Text>
+
+                      <Heading
+                        display={isActive ? "flex" : "none"}
+                        mt="10px"
+                        fontSize={16}
+                        fontWeight={400}
+                        lineHeight="120%"
+                        letterSpacing="-3%"
+                        color="white"
+                      >
+                        {item?.remark}
+                      </Heading>
+                    </VStack>
+                  </VStack>
+                );
+              })}
+            </Flex>
           ) : (
             <VStack w="full" justify="start" align="start">
               <Swiper
@@ -233,7 +248,13 @@ function Join() {
                           {item?.name}
                         </Heading>
 
-                        <Text fontSize={[18, 18, 20]} fontWeight={500} lineHeight="120%" letterSpacing="-3%" color="alt.400">
+                        <Text
+                          fontSize={[18, 18, 20]}
+                          fontWeight={500}
+                          lineHeight="120%"
+                          letterSpacing="-3%"
+                          color="alt.400"
+                        >
                           {item?.role}
                         </Text>
 

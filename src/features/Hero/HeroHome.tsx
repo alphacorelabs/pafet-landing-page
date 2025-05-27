@@ -134,7 +134,7 @@ function HeroHome() {
                 bgImage={
                   isDesktop
                     ? "https://miscfiles.nyc3.cdn.digitaloceanspaces.com/homehero.webp"
-                    : "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/v7kzavi7rez2doqfggec"
+                    : "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/yqbfzm8c4xftrg5zudvs"
                 }
                 bgSize="cover"
                 bgPos="50% right"
