@@ -42,7 +42,7 @@ export const contactInfo = [
 
   {
     title: "Call line",
-    content: "+1(302) 564-2246",
+    content: "07034987260",
     icon: MdOutlinePhone,
   },
 ];
