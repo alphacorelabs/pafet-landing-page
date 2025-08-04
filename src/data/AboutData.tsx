@@ -1,4 +1,4 @@
-import { FaRegEnvelope } from "react-icons/fa6";
+import { FaLocationPin, FaRegEnvelope } from "react-icons/fa6";
 import { MdOutlinePhone } from "react-icons/md";
 
 export const valuesData = [
@@ -42,7 +42,13 @@ export const contactInfo = [
 
   {
     title: "Call line",
-    content: "07034987260",
+    content: "+234 703 498 7260",
     icon: MdOutlinePhone,
+  },
+
+  {
+    title: "Address",
+    content: "No 6, Alaba layout, Akure, Ondo State, Nigeria",
+    icon: FaLocationPin,
   },
 ];

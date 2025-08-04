@@ -132,6 +132,7 @@ function ContactSection() {
                                       justify="start"
                                       align="start"
                                       gap="8px"
+                                      key={i}
                                     >
                                         <HStack
                                           w="fit-content"
