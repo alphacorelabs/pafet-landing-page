@@ -10,7 +10,7 @@ function CtaButton({ isLink, btnUrl, isSmall, isGradient, isDownload, btnText, i
   return (
     <>
       {isLink ?
-        <Link to={btnUrl || ""}>
+        <Link to={btnUrl || ""} onClick={handleClick}>
             <Button
                 bg={isGradient 
                     ? "radial-gradient(132.69% 122.41% at 52.23% 0%, #9153FF 0%, #7238F2 54.74%)" 

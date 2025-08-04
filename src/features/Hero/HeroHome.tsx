@@ -96,7 +96,9 @@ function HeroHome() {
               </VStack>
 
               <HStack w="full" justify="start" align="center" gap="20px" wrap={["wrap", "wrap", "nowrap"]}>
-                <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Create Your USD Account" btnUrl="#" />
+                <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Create Your USD Account" btnUrl="#" handleClick={() => {
+                  window.open("https://app.usepafet.com", "_blank");
+                }} />
 
                 <HStack
                   w="102px"
