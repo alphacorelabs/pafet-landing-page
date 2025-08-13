@@ -65,6 +65,7 @@ function Footer() {
                           justify="start"
                           align="start"
                           gap="20px"
+                       
                         >
                             <Text
                               fontSize={16}
@@ -97,6 +98,7 @@ function Footer() {
                                             _hover={{
                                                 color: "brand.100"
                                             }}
+                                            cursor="pointer"
                                         >
                                             {link?.display}
                                         </Text>

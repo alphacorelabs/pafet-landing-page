@@ -21,8 +21,8 @@ export const footerLinks: FooterSectionProps[] = [
     {
       title: "Legal",
       links: [
-        { display: "Terms of Service", url: "#" },
-        { display: "Privacy Policy", url: "#" },
+        { display: "Terms of Service", url: "/terms-of-service" },
+        { display: "Privacy Policy", url: "/privacy-policy" },
         { display: "KYC/AML", url: "#" },
       ],
     },

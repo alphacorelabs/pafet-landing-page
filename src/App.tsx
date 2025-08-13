@@ -11,6 +11,9 @@ import SupportPage from './pages/Support';
 import ContactPage from './pages/Contact';
 import ScrollToTop from './ui/layouts/ScrollToTop';
 import ProductsPage from './pages/Products';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
+
 
 
 function App() {
@@ -30,6 +33,8 @@ function App() {
             <Route path="/faqs" element={<FAQsPage/>}/>
             <Route path="/support" element={<SupportPage/>}/>
             <Route path="/contact" element={<ContactPage/>}/>
+            <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+            <Route path="/terms-of-service" element={<Terms/>}/>
           </Route>
 
         </Routes>
