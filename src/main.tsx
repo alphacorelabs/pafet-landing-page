@@ -6,7 +6,14 @@ import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme/index.tsx";
 import './index.css'
 import App from './App.tsx'
+//Import Mixpanel SDK
+import mixpanel from "mixpanel-browser";
 
+// Create an instance of the Mixpanel object, your token is already added to this snippet
+mixpanel.init('cef708fbefb988f88474ff1b2105a567', {
+  autocapture: true,
+  record_sessions_percent: 100,
+})
 
 
 const queryClient = new QueryClient({
