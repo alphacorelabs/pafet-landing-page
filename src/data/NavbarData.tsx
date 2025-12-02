@@ -54,21 +54,21 @@ export const NavbarData: NavbarDataProps[] = [
 
     {
         id: "about-us",
-        display: "About",
+        display: "About Us",
         path: "/about-us",
     },
 
-    {
-        id: "faqs",
-        display: "FAQs",
-        path: "/faqs",
-    },
+    // {
+    //     id: "faqs",
+    //     display: "FAQs",
+    //     path: "/faqs",
+    // },
 
-    {
-        id: "support",
-        display: "Support",
-        path: "/support",
-    },
+    // {
+    //     id: "support",
+    //     display: "Support",
+    //     path: "/support",
+    // },
 
 ]
 
