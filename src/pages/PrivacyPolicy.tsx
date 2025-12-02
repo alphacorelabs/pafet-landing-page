@@ -473,6 +473,65 @@ function PrivacyPolicy() {
                 contact us at legal@pafet.com
               </Text>
             </VStack>
+
+            {/* 3.23 Account Deletion Request */}
+            <VStack w="full" justify="start" align="start" gap="16px">
+              <Heading fontSize={[20, 20, 22]} fontWeight={600} lineHeight="130%" letterSpacing="-0.5%">
+                3.23 Account Deletion Request
+              </Heading>
+
+              <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600">
+                If you wish to delete your Pafet account and associated personal data, you can do so by following these steps:
+              </Text>
+
+              <VStack w="full" justify="start" align="start" gap="12px" pl="20px">
+                <Text fontSize={[16, 16, 18]} fontWeight={600} lineHeight="160%" color="grey.700">
+                  Step 1: Prepare Your Request
+                </Text>
+                <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600" pl="20px">
+                  Compose an email from the email address associated with your Pafet account. Include your full name, account email address,
+                  and phone number linked to your account for verification purposes.
+                </Text>
+
+                <Text fontSize={[16, 16, 18]} fontWeight={600} lineHeight="160%" color="grey.700">
+                  Step 2: Send Deletion Request
+                </Text>
+                <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600" pl="20px">
+                  Send your account deletion request to legal@pafet.com with the subject line "Account Deletion Request". Clearly state that
+                  you wish to permanently delete your account and all associated personal data.
+                </Text>
+
+                <Text fontSize={[16, 16, 18]} fontWeight={600} lineHeight="160%" color="grey.700">
+                  Step 3: Verification Process
+                </Text>
+                <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600" pl="20px">
+                  Our team will verify your identity to ensure the security of your account. You may receive a follow-up email requesting
+                  additional verification information or confirmation of your deletion request.
+                </Text>
+
+                <Text fontSize={[16, 16, 18]} fontWeight={600} lineHeight="160%" color="grey.700">
+                  Step 4: Account Review and Settlement
+                </Text>
+                <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600" pl="20px">
+                  Ensure all pending transactions are completed and withdraw any remaining balance from your account. If there are any
+                  outstanding issues, our team will contact you to resolve them before proceeding with the deletion.
+                </Text>
+
+                <Text fontSize={[16, 16, 18]} fontWeight={600} lineHeight="160%" color="grey.700">
+                  Step 5: Deletion Confirmation
+                </Text>
+                <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600" pl="20px">
+                  Once your request is processed (typically within 30 days), you will receive a confirmation email notifying you that your
+                  account and personal data have been permanently deleted from our systems, subject to legal retention requirements.
+                </Text>
+              </VStack>
+
+              <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600">
+                Please note that certain information may be retained for legal, regulatory, or legitimate business purposes as outlined in
+                our data retention policy. After deletion, your account cannot be recovered, and you will need to create a new account if
+                you wish to use Pafet services in the future.
+              </Text>
+            </VStack>
           </VStack>
         </VStack>
       </Container>
