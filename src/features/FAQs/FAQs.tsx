@@ -102,6 +102,7 @@ function FAQs() {
                                         color="grey.700"
                                         lineHeight="160%"
                                         letterSpacing="0%"
+                                        whiteSpace="pre-line"
                                     >
                                         {item.answer}
                                     </Text>
@@ -116,25 +117,42 @@ function FAQs() {
                       justify="center"
                       align="center"
                       mt="20px"
+                      gap="16px"
                     >
-
-                        <Button
-                            w="fit-content"
-                            py="10px"
-                            px="16px"
-                            h="initial"
-                            bgColor="white"
-                            color="grey.700"
-                            border="1px solid"
-                            borderColor="grey.200"
-                            rounded="full"
-                            _hover={{
-                                bgColor: "brand.100",
-                                color:"white"
-                            }}
-                        >
-                            Load more FAQs
-                        </Button>
+                        <Link to="/contact">
+                            <HStack
+                                w="fit-content"
+                                justify="center"
+                                align="center"
+                                gap="8px"
+                                _hover={{
+                                    gap: "12px",
+                                    transition: "all 0.2s ease"
+                                }}
+                            >
+                                <Text
+                                    fontSize={16}
+                                    fontWeight={500}
+                                    color="grey.700"
+                                    lineHeight="160%"
+                                    letterSpacing="0%"
+                                    _hover={{
+                                        color: "brand.100"
+                                    }}
+                                >
+                                    Don't see your question? Talk to us
+                                </Text>
+                                <Text
+                                    fontSize={16}
+                                    fontWeight={500}
+                                    color="brand.100"
+                                    lineHeight="160%"
+                                    letterSpacing="0%"
+                                >
+                                    →
+                                </Text>
+                            </HStack>
+                        </Link>
                     </VStack>
 
 

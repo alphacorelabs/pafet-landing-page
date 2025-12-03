@@ -81,7 +81,7 @@ function HeroHome() {
                   colorScheme="brand.300"
                   letterSpacing={["-1%", "-1%", "-2%"]}
                 >
-                  Take control of your money moves.
+                  Get Paid in USD by Global Clients
                 </Heading>
 
                 <Text
@@ -91,12 +91,12 @@ function HeroHome() {
                   letterSpacing={["0%", "0%", "-3%"]}
                   color="grey.500"
                 >
-                  Pafet gives you a virtual USD account, card, and tools to invoice global clients — all in one place.
+                  Virtual US bank account + professional invoicing for freelancers, remote workers, creators.
                 </Text>
               </VStack>
 
               <HStack w="full" justify="start" align="center" gap="20px" wrap={["wrap", "wrap", "nowrap"]}>
-                <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Create Your USD Account" btnUrl="#" handleClick={() => {
+                <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Get Started Today!" btnUrl="#" handleClick={() => {
                   window.open("https://app.usepafet.com", "_blank");
                 }} />
 

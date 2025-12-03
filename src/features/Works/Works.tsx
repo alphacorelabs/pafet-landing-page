@@ -99,7 +99,7 @@ function Works() {
         <VStack w="full" justify="start" align="start" gap="40px">
           <MainHeading
             subtitle="How It Works"
-            title="Quickstart Your Global Money Moves with Pafet"
+            title="From Invoice to Payment in 4 Simple Steps"
             isCenter={true}
           />
 

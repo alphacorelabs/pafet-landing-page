@@ -62,7 +62,7 @@ function Offer() {
             >
                 <MainHeading
                   subtitle="What We Offer"
-                  title="Everything you need to manage payments in one app"
+                  title="Everything You Need to Get Paid by Global Clients"
                   isCenter={true}
                 />
                 

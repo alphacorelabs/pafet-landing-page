@@ -78,9 +78,7 @@ function DownloadCTA() {
                   lineHeight="160%"
                   letterSpacing="0%"
                 >
-                  Pafet gives you everything you need to earn globally, spend
-                  freely, and stay in control. Get everything you need to earn,
-                  hold, and spend in USD.
+                  Pafet gives you everything you need to earn globally, spend freely, and stay in control.
                 </Text>
               </VStack>
 
@@ -150,7 +148,7 @@ function DownloadCTA() {
                 isSmall={true}
                 isGradient={true}
                 isDownload={true}
-                btnText="Download the Pafet App"
+                btnText="Create Your Account Now"
                 btnUrl="/"
               />
             </VStack>

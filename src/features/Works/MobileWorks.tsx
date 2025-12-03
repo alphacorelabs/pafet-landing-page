@@ -62,7 +62,7 @@ function MobileWorks() {
             >
                 <MainHeading
                     subtitle="How It Works"
-                    title="Quickstart Your Global Money Moves with Pafet"
+                    title="From Invoice to Payment in 4 Simple Steps"
                     isCenter={true}
                 />
 

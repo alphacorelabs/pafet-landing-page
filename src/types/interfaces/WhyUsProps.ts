@@ -1,5 +1,6 @@
 export interface WhyUsProps {
-    title: string;
-    content: string;
-    icon: any;
+    quote: string;
+    name: string;
+    role: string;
+    location: string;
 }

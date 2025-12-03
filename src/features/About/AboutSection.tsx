@@ -84,8 +84,23 @@ function AboutSection() {
                             letterSpacing="0%"
                             textAlign="center"
                         >
-                            We know the pain of delayed payments, frozen funds, and shady rates. Pafet is what we wish existed, so we built it. Designed for African freelancers and remote workers who want to earn, hold, convert, and spend in USD.
+                            We’re not just familiar with the challenges African freelancers face – delayed payments, blocked funds, non-transparent exchange rates, and scattered tools. We built Pafet because we believe you deserve far better.
+
                         </Text>
+
+
+                        <Text
+                            fontSize={[18, 18, 20]}
+                            fontWeight={500}
+                            color="grey.500"
+                            lineHeight="160%"
+                            letterSpacing="0%"
+                            textAlign="center"
+                        >
+                            Pafet is the financial platform we wished existed: a simple, secure, and comprehensive solution designed specifically for African freelancers, remote workers, creatives, and consultants who earn in USD and need flexible ways to manage, spend, and preserve their income.
+
+                        </Text>
+
 
                     </VStack>
 
