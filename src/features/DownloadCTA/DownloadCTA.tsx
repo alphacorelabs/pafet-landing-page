@@ -147,9 +147,10 @@ function DownloadCTA() {
                 isLink={true}
                 isSmall={true}
                 isGradient={true}
-                isDownload={true}
+                isDownload={false}
                 btnText="Create Your Account Now"
-                btnUrl="/"
+                btnUrl="https://app.usepafet.com"
+                
               />
             </VStack>
           </SimpleGrid>

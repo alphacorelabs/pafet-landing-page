@@ -1,6 +1,15 @@
 import { OfferProps } from "../types/interfaces/OfferProps";
 
  export const offersData: OfferProps[] = [
+  {
+    category: "Invoice Generator",
+    title: "Create branded, trackable invoices",
+    description:
+      " Create branded, trackable invoices that connect directly to your USD account.",
+    imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/gcmp9qgjrvsijyv8kkqi",
+    imageWidth: "300px",
+    imageHeight: "185px", 
+  },
     {
       category: "USD Account",
       title: "Receive international payments seamlessly",
@@ -10,30 +19,23 @@ import { OfferProps } from "../types/interfaces/OfferProps";
        imageWidth: "357.35px",
        imageHeight: "109.8px", 
     },
+    
     {
-      category: "Invoice Generator",
-      title: "Create branded, trackable invoices",
-      description:
-        " Create branded, trackable invoices that connect directly to your USD account.",
-      imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/gcmp9qgjrvsijyv8kkqi",
-      imageWidth: "300px",
-      imageHeight: "185px", 
-    },
-    {
-      category: "Flexible Currency Exchange",
+      category: "USD Card",
       title: "Convert at fair, real-time rates",
       description:
-        "Convert USD to Naira at transparent, real-time rates when you choose.",
-        imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/lfxozbesbvsbomickmzs",
+        "Spend globally with your virtual Card. Perfect for software subscriptions, digital advertising, and any online purchase worldwide.",
+        imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/uprmfsq6w04vi5sft7iw",
+        // imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/lfxozbesbvsbomickmzs",
         imageWidth: "300px",
         imageHeight: "185px", 
     },
     {
       category: "USDC Withdrawals",
-      title: "Withdraw your USD earnings as USDC",
+      title: "Withdraw your earnings in USDC or USDT",
       description:
-        "Opt to withdraw your USD earnings as USDC (a US Dollar-pegged stablecoin) directly to your external crypto wallet for stability and global access.",
-      imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/uprmfsq6w04vi5sft7iw",
+        "Opt to withdraw your earnings in USDC or USDT.",
+      imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/lfxozbesbvsbomickmzs",
       imageWidth: "251.47px",
       imageHeight: "162.93px", 
     },

@@ -28,14 +28,26 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 import ContainerLayout from "../../ui/layouts/ContainerLayout";
 import { DocumentIcon, MoneyReceiveIcon } from "../../ui/icons";
 import CtaButton from "../../ui/CtaButton";
 import { navbarIcons } from "../../data/NavbarData";
 import { NavIconProps } from "../../types/interfaces/NavbarProps";
 
+const ROTATING_WORDS = ["Freelancers", "Remote Workers", "Creators"];
+
 function HeroHome() {
   const isDesktop = useBreakpointValue({ base: false, lg: true });
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % ROTATING_WORDS.length);
+    }, 3000); // Change word every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Stack w="full" justify="start" align="start" pt="6rem" pb={["4rem", "4rem", "6rem"]}>
@@ -91,14 +103,53 @@ function HeroHome() {
                   letterSpacing={["0%", "0%", "-3%"]}
                   color="grey.500"
                 >
-                  Virtual US bank account + professional invoicing for freelancers, remote workers, creators.
+                  US Bank Account + Professional Invoicing for{" "}
+                  <Box
+                    as="span"
+                    position="relative"
+                    display="inline-block"
+                    minW={["120px", "120px", "160px"]}
+                    height="1em"
+                    verticalAlign="baseline"
+                  >
+                    <AnimatePresence mode="wait">
+                      <motion.span
+                        key={currentWordIndex}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.5 }}
+                        style={{
+                          position: "absolute",
+                          left: 0,
+                          top: 0,
+                          fontWeight: 600,
+                          background: "linear-gradient(90deg, #4F46E5 0%, #7C3AED 100%)",
+                          WebkitBackgroundClip: "text",
+                          WebkitTextFillColor: "transparent",
+                          backgroundClip: "text",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {ROTATING_WORDS[currentWordIndex]}
+                      </motion.span>
+                    </AnimatePresence>
+                  </Box>
+                  .
                 </Text>
               </VStack>
 
               <HStack w="full" justify="start" align="center" gap="20px" wrap={["wrap", "wrap", "nowrap"]}>
-                <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Get Started Today!" btnUrl="#" handleClick={() => {
-                  window.open("https://app.usepafet.com", "_blank");
-                }} />
+                <CtaButton
+                  isLink={true}
+                  isSmall={false}
+                  isGradient={true}
+                  btnText="Get Started Today"
+                  btnUrl="#"
+                  handleClick={() => {
+                    window.open("https://app.usepafet.com", "_blank");
+                  }}
+                />
 
                 <HStack
                   w="102px"

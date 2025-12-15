@@ -4,7 +4,7 @@ export const worksData: WorkDataProps[] = [
     {
         id: "1",
         title: "Sign up in minutes",
-        content: "Get verified once. Instantly access your USD wallet, virtual card, and invoicing tools.",
+        content: "Get verified once. Instantly access your USD account, virtual card, and invoicing tools.",
         imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/qgxeywanwfezoah3omde",
     },
 

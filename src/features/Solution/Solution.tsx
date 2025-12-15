@@ -31,6 +31,8 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import ContainerLayout from "../../ui/layouts/ContainerLayout";
 import MainHeading from "../../ui/MainHeading";
 import CtaButton from "../../ui/CtaButton";
+import { navbarIcons } from "../../data/NavbarData";
+import { NavIconProps } from "../../types/interfaces/NavbarProps";
 
 function Solution() {
   return (
@@ -85,7 +87,7 @@ function Solution() {
                 </Heading>
               </VStack>
 
-              <CtaButton isLink={true} isGradient={false} isSmall={true} btnText="Create Your USD Account" btnUrl="#" />
+              <CtaButton isLink={true} isGradient={false} isSmall={true} btnText="Create Your USD Account" btnUrl="https://app.usepafet.com"  />
             </VStack>
 
             <VStack
@@ -101,12 +103,37 @@ function Solution() {
             >
               <VStack w="full" justify="start" align="start" gap="20px">
                 <Heading fontSize={[20, 20, 24]} fontWeight={600} color="brand.300" lineHeight="120%" letterSpacing="-4%">
-                  Use Pafet — a clean, connected flow to get paid, hold USD, and spend without limits.
+                  Use Pafet — a clean, connected flow to get paid, and spend without globally.
                 </Heading>
               </VStack>
 
-              <CtaButton isLink={true} isGradient={false} isSmall={true} btnText="Download Your App" isDownload={true} btnUrl="#" />
-
+              <HStack
+                  w="120px"
+                  h="56px"
+                  justify="space-between"
+                  align="center"
+                  rounded="full"
+                  bgColor="white"
+                  border="1px solid"
+                  borderColor="alt.200"
+                  py="16px"
+                  px="24px"
+                  backdropFilter="blur(22.598642349243164px)"
+                >
+                  {navbarIcons.map((item: NavIconProps, i: number) => (
+                    <Link to={item?.url} key={i} style={{ display: "block" }}>
+                      <Icon
+                        as={item.icon}
+                        fontSize="22px"
+                        mt="4px"
+                        _hover={{
+                          color: "brand.100",
+                        }}
+                      />
+                    </Link>
+                  ))} 
+                </HStack>
+      
               <Image
                 w="full"
                 h="full"

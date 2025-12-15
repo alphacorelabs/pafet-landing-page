@@ -470,7 +470,7 @@ function PrivacyPolicy() {
 
               <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600">
                 If you have any questions, concerns, or requests regarding this Privacy Policy or our data processing practices, please
-                contact us at legal@pafet.com
+                contact us at legal@usepafet
               </Text>
             </VStack>
 
@@ -497,7 +497,7 @@ function PrivacyPolicy() {
                   Step 2: Send Deletion Request
                 </Text>
                 <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600" pl="20px">
-                  Send your account deletion request to legal@pafet.com with the subject line "Account Deletion Request". Clearly state that
+                  Send your account deletion request to legal@usepafet with the subject line "Account Deletion Request". Clearly state that
                   you wish to permanently delete your account and all associated personal data.
                 </Text>
 

@@ -40,20 +40,20 @@ export const contactInfo = [
     icon: FaRegEnvelope,
   },
 
-  {
-    title: "Call line",
-    content: "+234 703 498 7260",
-    icon: MdOutlinePhone,
-  },
+  // {
+  //   title: "Call line",
+  //   content: "+234 703 498 7260",
+  //   icon: MdOutlinePhone,
+  // },
 
   {
     title: "Address",
     content: "131 Continental Dr, Suite 305, Newark, New Castle, Delaware 19713, USA",
     icon: FaLocationPin,  
   },
-  {
-    title: "Address",
-    content: "No 6, Alaba layout, Akure, Ondo State, Nigeria",
-    icon: FaLocationPin,
-  },
+  // {
+  //   title: "Address",
+  //   content: "No 6, Alaba layout, Akure, Ondo State, Nigeria",
+  //   icon: FaLocationPin,
+  // },
 ];

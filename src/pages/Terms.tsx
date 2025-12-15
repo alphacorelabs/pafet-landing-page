@@ -326,7 +326,7 @@ function Terms() {
 
             <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600">
               These Terms are governed by Nigerian law. We encourage users to resolve disputes through our internal resolution process
-              before pursuing legal action. Contact our customer support team or legal@pafet.com for dispute resolution.
+              before pursuing legal action. Contact our customer support team or legal@usepafet for dispute resolution.
             </Text>
           </VStack>
 
@@ -349,7 +349,7 @@ function Terms() {
             </Heading>
 
             <Text fontSize={[16, 16, 18]} fontWeight={400} lineHeight="160%" color="grey.600">
-              For questions, concerns, or support related to these Terms of Service, contact us at legal@pafet.com
+              For questions, concerns, or support related to these Terms of Service, contact us at legal@usepafet
             </Text>
           </VStack>
         </VStack>

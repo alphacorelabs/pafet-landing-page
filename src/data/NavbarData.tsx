@@ -77,13 +77,13 @@ export const navbarIcons: NavIconProps[] = [
     {
         icon: IoLogoGooglePlaystore,
         title: "Playstore",
-        url: "",
+        url: "https://play.google.com/store/apps/details?id=com.pafet.pafet",
     },
 
     {
         icon: ImAppleinc,
         title: "Applestore",
-        url: "",
+        url: "https://apps.apple.com/ng/app/pafet-invoice-us-bank-card/id6752225988",
     },
 ]
 

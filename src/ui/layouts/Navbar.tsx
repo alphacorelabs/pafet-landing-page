@@ -402,7 +402,7 @@ function Navbar() {
                     </Link>
 
                     <HStack w="full" justify="start" align="center" gap="10px">
-                      <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Create Your USD Account" btnUrl="#" />
+                      <CtaButton isLink={true} isSmall={false} isGradient={true} btnText="Create Your USD Account" btnUrl="https://app.usepafet.com"  />
 
                       <HStack
                         w="full"

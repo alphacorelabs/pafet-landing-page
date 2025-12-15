@@ -65,7 +65,7 @@ function StandBy() {
               letterSpacing="0%"
               textAlign="center"
             >
-              hello@usePafet.com
+              hello@usepafet.com
             </Text>
           </Text>
 
@@ -102,7 +102,7 @@ function StandBy() {
                 letterSpacing="0%"
                 textAlign="center"
               >
-                hello@usePafet.com
+                hello@usepafet.com
               </Text>
             </HStack>
 
