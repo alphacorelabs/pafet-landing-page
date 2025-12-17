@@ -2,21 +2,21 @@ import { WhyUsProps } from "../types/interfaces/WhyUsProps";
 
 export const whyUsData: WhyUsProps[] = [
     {
-        quote: "Before Pafet, I lost 12% of every payment to fees and delays. Now I keep 98.5% and get paid in no time instead of waiting for days. That's $400 extra every month.",
+        quote: "I used to lose so much money to bad exchange rates on Upwork. With Pafet, I get a real US account and convert to Naira at market rates. It’s transparent, fast, and I finally keep more of what I earn.",
         name: "Sarah M.",
         role: "Graphic Designer",
         location: "Lagos",
     },
 
     {
-        quote: "My US clients love that they can pay me like a local business. No more wire transfer fees on their end. It's a win-win.",
+        quote: "My local cards kept getting declined for Facebook Ads, but Pafet’s virtual dollar card works every time. Funding is instant, and paying for subscriptions is seamless. It’s a total lifesaver for my business.",
         name: "Margaret E.",
-        role: "Developer",
+        role: "Social Media Manager",
         location: "Abuja",
     },
 
     {
-        quote: "I used to juggle many fintech apps and my local bank. Now everything happens in Pafet—invoicing, receiving, converting.",
+        quote: "The invoice generator makes me look professional, and clients can pay directly into my US account easily. Best of all, moving money to my Nigerian bank takes just minutes. No more delays or paperwork.",
         name: "Simon O.",
         role: "Content Creator",
         location: "Port Harcourt",

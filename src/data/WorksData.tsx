@@ -18,7 +18,7 @@ export const worksData: WorkDataProps[] = [
     {
         id: "3",
         title: "Receive USD directly",
-        content: "Clients pay into your US account like they would any local business. Money arrives in your USD wallet instantly.",
+        content: "Clients pay into your US account like they would any local business. Money arrives in your USD wallet.",
         imageUrl: "https://res.cloudinary.com/doqvfemo3/image/upload/f_auto,q_auto/v1/Pafet/fsyiakktk0f7kodv7oac",
     },
 

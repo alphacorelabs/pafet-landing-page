@@ -1,32 +1,27 @@
-
-export const faqsData = [
+export const faqsData = 
+[
     {
-        question: "How do I receive payments from international clients?",
-        answer: "Once you generate an invoice, you'll receive payments directly into your named US/UK/EU account. Clients can pay via bank transfer, PayPal, or Stripe—just like they would with any other local business.",
+      "question": "What is Pafet?",
+      "answer": "Pafet is a financial platform designed for African freelancers, remote workers, and creators. We provide you with a US bank account to receive payments, a virtual dollar card for global spending, and the ability to convert USD to Naira at fair market rates."
     },
-
     {
-        question: "What's different about Pafet?",
-        answer: "Unlike other platforms that only solve one problem, Pafet gives you the complete solution: invoicing tools, USD bank accounts, virtual cards, and fair currency exchange in one platform.",
+      "question": "Is my money safe with Pafet?",
+      "answer": "Yes. Security is our top priority. We use bank-grade encryption to protect your data and funds. We partner with regulated financial institutions to ensure your money is held securely."
     },
-
     {
-        question: "What if I don't want to create an invoice?",
-        answer: "No problem. You can give your US account details directly to clients or platforms. They transfer money, and it arrives in your USD wallet. The invoice tool is there when you need it—not mandatory.",
+      "question": "How do I receive money from clients?",
+      "answer": "Once you verify your account, you will be assigned a unique US bank account number and routing number. You can share these details with your clients or add them to platforms like Upwork, Fiverr, Deel, or YouTube to receive payments directly."
     },
-
     {
-        question: "What can I do with Pafet?",
-        answer: "Create and send professional invoices\n\nReceive payments in USD from anywhere\n\nHold your earnings in dollars\n\nSpend globally with your virtual Mastercard\n\nConvert to naira at fair rates when you're ready\n\nWithdraw to any Nigerian bank or mobile wallet",
+      "question": "Can I invoice my clients through Pafet?",
+      "answer": "Yes. Our built-in professional invoice generator allows you to create branded invoices in minutes. You can set payment terms, track views, and send them directly to clients for seamless payment."
     },
-
     {
-        question: "Do I need to verify my identity?",
-        answer: "Yes. As a regulated financial platform, we're required to verify all users. The process takes less than 5 minutes—just upload a valid ID and take a quick selfie.",
+      "question": "Where can I use the Pafet Virtual Dollar Card?",
+      "answer": "You can use your virtual card anywhere Mastercard/Visa is accepted online. This includes paying for Facebook/Google Ads, subscriptions (Netflix, Apple Music, Spotify), shopping on Amazon, and paying for software tools."
     },
-
     {
-        question: "Is my money safe?",
-        answer: "Yes. We partner with globally trusted payment providers and enforce bank-grade security protocols. Your funds and data are fully protected.",
-    },
-]
+      "question": "How do I withdraw my money?",
+      "answer": "We offer flexible withdrawal options. You can convert your USD to Naira and withdraw instantly to any Nigerian bank account. Alternatively, you can withdraw your funds in stablecoins (USDT or USDC) directly to your external crypto wallet."
+    }
+  ];

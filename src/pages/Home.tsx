@@ -20,9 +20,9 @@ function HomePage() {
       <HeroHome/>
       <Offer/>
       <Solution/>
-      {isDesktop ? <Works/> : <MobileWorks/>}
+      {isDesktop? <Works/> : <MobileWorks/>}
       <WhyUs/>
-      <Join/>
+      {/* <Join/> */}
       <FAQs/>
       <DownloadCTA/>
     </>
