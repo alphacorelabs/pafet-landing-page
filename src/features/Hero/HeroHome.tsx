@@ -131,11 +131,11 @@ function HeroHome() {
                           whiteSpace: "nowrap",
                         }}
                       >
-                        {ROTATING_WORDS[currentWordIndex]}
+                        {ROTATING_WORDS[currentWordIndex]}.
                       </motion.span>
                     </AnimatePresence>
                   </Box>
-                  .
+                  
                 </Text>
               </VStack>
 
