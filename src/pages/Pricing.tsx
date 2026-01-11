@@ -1,14 +1,14 @@
-import React from "react";
-import PricingSection from "../features/Pricing/PricingSection";
-import DownloadCTA from "../features/DownloadCTA/DownloadCTA";
+import React from 'react'
+import PricingSection from '../features/Pricing/PricingSection'
+import DownloadCTA from '../features/DownloadCTA/DownloadCTA'
 
 function PricingPage() {
   return (
     <>
-      <PricingSection />
-      <DownloadCTA />
+        <PricingSection/>
+        <DownloadCTA/>
     </>
-  );
+  )
 }
 
-export default PricingPage;
+export default PricingPage

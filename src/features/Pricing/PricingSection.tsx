@@ -24,6 +24,7 @@ function PricingSection() {
       align="start"
       py={["3rem", "3rem", "6rem"]}
       gap="60px"
+      mt="1rem"
     >
       <ContainerLayout>
         <VStack w="full" justify="center" align="center" gap="60px">
