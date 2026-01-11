@@ -119,6 +119,40 @@ function FAQs() {
                       mt="20px"
                       gap="16px"
                     >
+                        <Link to="/pricing">
+                            <HStack
+                                w="fit-content"
+                                justify="center"
+                                align="center"
+                                gap="8px"
+                                _hover={{
+                                    gap: "12px",
+                                    transition: "all 0.2s ease"
+                                }}
+                            >
+                                <Text
+                                    fontSize={16}
+                                    fontWeight={500}
+                                    color="grey.700"
+                                    lineHeight="160%"
+                                    letterSpacing="0%"
+                                    _hover={{
+                                        color: "brand.100"
+                                    }}
+                                >
+                                    View our pricing
+                                </Text>
+                                <Text
+                                    fontSize={16}
+                                    fontWeight={500}
+                                    color="brand.100"
+                                    lineHeight="160%"
+                                    letterSpacing="0%"
+                                >
+                                    →
+                                </Text>
+                            </HStack>
+                        </Link>
                         <Link to="/contact">
                             <HStack
                                 w="fit-content"

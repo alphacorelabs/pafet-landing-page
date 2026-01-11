@@ -30,7 +30,7 @@ export const footerLinks: FooterSectionProps[] = [
       title: "Support",
       links: [
         { display: "Help", url: "/support" },
-        
+        { display: "Pricing", url: "/pricing" },
         { display: "Contact us", url: "/contact" },
         { display: "FAQs", url: "/faqs" },
       ],

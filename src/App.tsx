@@ -13,6 +13,7 @@ import ScrollToTop from './ui/layouts/ScrollToTop';
 import ProductsPage from './pages/Products';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
+import PricingPage from './pages/Pricing';
 
 
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/products/:slug" element={<ProductsPage/>}/>
             <Route path="/about-us" element={<AboutPage/>}/>
             <Route path="/faqs" element={<FAQsPage/>}/>
+            <Route path="/pricing" element={<PricingPage/>}/>
             <Route path="/support" element={<SupportPage/>}/>
             <Route path="/contact" element={<ContactPage/>}/>
             <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
