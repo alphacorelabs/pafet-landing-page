@@ -19,7 +19,7 @@ function HomePage() {
     <>
       <HeroHome/>
       <Offer/>
-      <Solution/>
+      {/* <Solution/> */}
       {isDesktop? <Works/> : <MobileWorks/>}
       <WhyUs/>
       {/* <Join/> */}
